@@ -136,7 +136,7 @@ export default function HomePage() {
             {/* Three Pillars */}
             <section className="py-24 px-6 relative z-20">
                 <div className="max-w-7xl mx-auto">
-                    <h2 className="text-6xl font-display font-black text-center mb-20 text-neon-yellow drop-shadow-lg">
+                    <h2 className="text-6xl font-display font-black text-center mb-20 text-neon-yellow drop-shadow-lg" style={{ textShadow: '0 0 25px rgba(255, 215, 0, 0.5), 0 0 15px rgba(255, 215, 0, 0.3)' }}>
                         THREE PILLARS
                     </h2>
 
@@ -147,7 +147,7 @@ export default function HomePage() {
                                 <Film className="w-20 h-20 text-neon-pink mb-6 group-hover:animate-bounce-slow" />
                                 <h3 className="text-4xl font-bold mb-4 text-neon-pink font-display">AI VIDEO VAULT</h3>
                                 <p className="text-gray-300 text-lg leading-relaxed">
-                                    Permanent storage on Arweave. Camera angles, lighting, effects — all machine-readable for AI learning.
+                                    <span className="text-neon-pink font-bold" style={{ textShadow: '0 0 10px rgba(255, 20, 147, 0.4)' }}>Permanent storage</span> on Arweave. Camera angles, lighting, effects — all machine-readable for AI learning.
                                 </p>
                             </Link>
                         </motion.div>
@@ -169,7 +169,7 @@ export default function HomePage() {
                                 <Trophy className="w-20 h-20 text-neon-yellow mb-6 group-hover:animate-bounce-slow" />
                                 <h3 className="text-4xl font-bold mb-4 text-neon-yellow font-display">BEST VIDEO CONTEST</h3>
                                 <p className="text-gray-300 text-lg leading-relaxed">
-                                    Vote for your favorite (0.0009 SOL/vote). Annual prize pool: 40% Grand Prize, 30% Runners-up, 20% Creator Fund.
+                                    Vote for your favorite (<span className="text-neon-yellow font-bold" style={{ textShadow: '0 0 10px rgba(255, 215, 0, 0.4)' }}>0.0009 SOL/vote</span>). Annual prize pool: <span className="text-neon-yellow font-bold" style={{ textShadow: '0 0 10px rgba(255, 215, 0, 0.4)' }}>40% Grand Prize</span>, 30% Runners-up, 20% Creator Fund.
                                 </p>
                             </Link>
                         </motion.div>
@@ -180,7 +180,7 @@ export default function HomePage() {
             {/* Cultural Moments That Needed This */}
             <section className="py-24 px-6 bg-gradient-to-b from-street-black to-street-gray relative z-20">
                 <div className="max-w-7xl mx-auto">
-                    <h2 className="text-5xl md:text-6xl font-display font-black text-center mb-6 text-neon-cyan drop-shadow-lg">
+                    <h2 className="text-5xl md:text-6xl font-display font-black text-center mb-6 text-neon-cyan drop-shadow-lg" style={{ textShadow: '0 0 25px rgba(0, 255, 255, 0.5), 0 0 15px rgba(0, 255, 255, 0.3)' }}>
                         CULTURAL MOMENTS THAT NEEDED THIS
                     </h2>
                     <p className="text-xl text-center text-gray-300 mb-16 max-w-3xl mx-auto">

@@ -17,110 +17,103 @@ export default function StorageDashboard() {
                 Your culture is stored across two permanent systems. Think of Solana as the <strong className="text-neon-yellow">Title Deed</strong> and Arweave as the <strong className="text-neon-cyan">Safe</strong>.
             </p>
 
-            <div className="grid lg:grid-cols-2 gap-8">
-                {/* Arweave Card */}
+            {/* Redesigned as single column for perfect alignment */}
+            <div className="space-y-6">
+                {/* Arweave Section */}
                 <motion.div
-                    whileHover={{ y: -5 }}
-                    className="neon-box border-neon-cyan p-8 bg-black/20"
+                    whileHover={{ y: -2, boxShadow: "0 0 30px rgba(0, 255, 255, 0.2)" }}
+                    className="bg-gradient-to-r from-neon-cyan/5 to-transparent border-l-4 border-neon-cyan p-6 rounded-lg shadow-[0_0_15px_rgba(0,255,255,0.1)]"
                 >
                     <div className="flex items-center gap-4 mb-6">
-                        <div className="p-4 bg-neon-cyan/10 rounded-xl">
-                            <Infinity className="w-10 h-10 text-neon-cyan" />
+                        <div className="p-3 bg-neon-cyan/10 rounded-lg">
+                            <Infinity className="w-8 h-8 text-neon-cyan drop-shadow-[0_0_8px_rgba(0,255,255,0.6)]" />
                         </div>
                         <div>
-                            <h3 className="text-3xl font-bold text-neon-cyan">Arweave</h3>
-                            <p className="text-sm text-gray-400 mt-1">Permanent File Storage</p>
+                            <h3 className="text-2xl font-bold text-neon-cyan" style={{ textShadow: '0 0 20px rgba(0, 255, 255, 0.5), 0 0 10px rgba(0, 255, 255, 0.3)' }}>
+                                Arweave
+                            </h3>
+                            <p className="text-gray-400 text-sm">Permanent File Storage</p>
                         </div>
                     </div>
 
-                    <div className="space-y-4">
-                        <div>
-                            <p className="text-white font-bold mb-1 flex items-center gap-2">
-                                <Shield className="w-4 h-4 text-neon-green" />
-                                What's Stored
-                            </p>
-                            <p className="text-gray-300 text-sm pl-6">
-                                Your files + metadata
-                            </p>
+                    <div className="grid md:grid-cols-3 gap-6">
+                        <div className="bg-black/20 p-4 rounded-lg border border-white/5 hover:border-neon-green/30 transition-all">
+                            <div className="flex items-center gap-2 mb-2">
+                                <Shield className="w-4 h-4 text-neon-green drop-shadow-[0_0_4px_rgba(0,255,0,0.4)]" />
+                                <p className="text-white font-bold text-sm">What's Stored</p>
+                            </div>
+                            <p className="text-gray-300 text-sm">Files + metadata</p>
                         </div>
 
-                        <div>
-                            <p className="text-white font-bold mb-1 flex items-center gap-2">
-                                <LinkIcon className="w-4 h-4 text-neon-yellow" />
-                                Permanence
-                            </p>
-                            <p className="text-gray-300 text-sm pl-6">
-                                Never deleted. Exists forever.
-                            </p>
+                        <div className="bg-black/20 p-4 rounded-lg border border-white/5 hover:border-neon-yellow/30 transition-all">
+                            <div className="flex items-center gap-2 mb-2">
+                                <LinkIcon className="w-4 h-4 text-neon-yellow drop-shadow-[0_0_4px_rgba(255,255,0,0.4)]" />
+                                <p className="text-white font-bold text-sm">Permanence</p>
+                            </div>
+                            <p className="text-gray-300 text-sm">Never deleted. Forever.</p>
                         </div>
 
-                        <div>
-                            <p className="text-white font-bold mb-1 flex items-center gap-2">
-                                <Info className="w-4 h-4 text-neon-pink" />
-                                Cost
-                            </p>
-                            <p className="text-gray-300 text-sm pl-6">
-                                One-time fee. No renewals.
-                            </p>
+                        <div className="bg-black/20 p-4 rounded-lg border border-white/5 hover:border-neon-pink/30 transition-all">
+                            <div className="flex items-center gap-2 mb-2">
+                                <Info className="w-4 h-4 text-neon-pink drop-shadow-[0_0_4px_rgba(255,0,255,0.4)]" />
+                                <p className="text-white font-bold text-sm">Cost</p>
+                            </div>
+                            <p className="text-gray-300 text-sm">One-time fee only</p>
                         </div>
                     </div>
 
-                    <div className="mt-6 pt-4 border-t border-white/10">
-                        <code className="text-xs text-neon-cyan bg-black/60 px-3 py-2 rounded block">
+                    <div className="mt-4">
+                        <code className="text-xs text-neon-cyan bg-black/40 px-3 py-2 rounded inline-block shadow-[0_0_10px_rgba(0,255,255,0.15)]">
                             arweave.net/TX_ID
                         </code>
                     </div>
                 </motion.div>
 
-                {/* Solana Card */}
+                {/* Solana Section */}
                 <motion.div
-                    whileHover={{ y: -5 }}
-                    className="neon-box border-neon-yellow p-8 bg-black/20"
+                    whileHover={{ y: -2, boxShadow: "0 0 30px rgba(255, 215, 0, 0.2)" }}
+                    className="bg-gradient-to-r from-neon-yellow/5 to-transparent border-l-4 border-neon-yellow p-6 rounded-lg shadow-[0_0_15px_rgba(255,215,0,0.1)]"
                 >
                     <div className="flex items-center gap-4 mb-6">
-                        <div className="p-4 bg-neon-yellow/10 rounded-xl">
-                            <Database className="w-10 h-10 text-neon-yellow" />
+                        <div className="p-3 bg-neon-yellow/10 rounded-lg">
+                            <Database className="w-8 h-8 text-neon-yellow drop-shadow-[0_0_8px_rgba(255,215,0,0.6)]" />
                         </div>
                         <div>
-                            <h3 className="text-3xl font-bold text-neon-yellow">Solana</h3>
-                            <p className="text-sm text-gray-400 mt-1">Ownership Registry</p>
+                            <h3 className="text-2xl font-bold text-neon-yellow" style={{ textShadow: '0 0 20px rgba(255, 215, 0, 0.5), 0 0 10px rgba(255, 215, 0, 0.3)' }}>
+                                Solana
+                            </h3>
+                            <p className="text-gray-400 text-sm">Ownership Registry</p>
                         </div>
                     </div>
 
-                    <div className="space-y-4">
-                        <div>
-                            <p className="text-white font-bold mb-1 flex items-center gap-2">
-                                <Shield className="w-4 h-4 text-neon-green" />
-                                What's Stored
-                            </p>
-                            <p className="text-gray-300 text-sm pl-6">
-                                NFT "Title Deed" pointing to file
-                            </p>
+                    <div className="grid md:grid-cols-3 gap-6">
+                        <div className="bg-black/20 p-4 rounded-lg border border-white/5 hover:border-neon-green/30 transition-all">
+                            <div className="flex items-center gap-2 mb-2">
+                                <Shield className="w-4 h-4 text-neon-green drop-shadow-[0_0_4px_rgba(0,255,0,0.4)]" />
+                                <p className="text-white font-bold text-sm">What's Stored</p>
+                            </div>
+                            <p className="text-gray-300 text-sm">NFT "Title Deed"</p>
                         </div>
 
-                        <div>
-                            <p className="text-white font-bold mb-1 flex items-center gap-2">
-                                <LinkIcon className="w-4 h-4 text-neon-yellow" />
-                                Ownership
-                            </p>
-                            <p className="text-gray-300 text-sm pl-6">
-                                Buy, sell, transfer your NFTs
-                            </p>
+                        <div className="bg-black/20 p-4 rounded-lg border border-white/5 hover:border-neon-yellow/30 transition-all">
+                            <div className="flex items-center gap-2 mb-2">
+                                <LinkIcon className="w-4 h-4 text-neon-yellow drop-shadow-[0_0_4px_rgba(255,215,0,0.4)]" />
+                                <p className="text-white font-bold text-sm">Ownership</p>
+                            </div>
+                            <p className="text-gray-300 text-sm">Buy, sell, transfer</p>
                         </div>
 
-                        <div>
-                            <p className="text-white font-bold mb-1 flex items-center gap-2">
-                                <Info className="w-4 h-4 text-neon-pink" />
-                                Capacity
-                            </p>
-                            <p className="text-gray-300 text-sm pl-6">
-                                Unlimited NFTs per wallet
-                            </p>
+                        <div className="bg-black/20 p-4 rounded-lg border border-white/5 hover:border-neon-pink/30 transition-all">
+                            <div className="flex items-center gap-2 mb-2">
+                                <Info className="w-4 h-4 text-neon-pink drop-shadow-[0_0_4px_rgba(255,0,255,0.4)]" />
+                                <p className="text-white font-bold text-sm">Capacity</p>
+                            </div>
+                            <p className="text-gray-300 text-sm">Unlimited NFTs</p>
                         </div>
                     </div>
 
-                    <div className="mt-6 pt-4 border-t border-white/10">
-                        <code className="text-xs text-neon-yellow bg-black/60 px-3 py-2 rounded block">
+                    <div className="mt-4">
+                        <code className="text-xs text-neon-yellow bg-black/40 px-3 py-2 rounded inline-block shadow-[0_0_10px_rgba(255,215,0,0.15)]">
                             Kulture...abc123
                         </code>
                     </div>
