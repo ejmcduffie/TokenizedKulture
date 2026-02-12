@@ -7,6 +7,7 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const outfit = Outfit({ subsets: ['latin'], variable: '--font-outfit' })
 
 export const metadata: Metadata = {
+    metadataBase: new URL('http://localhost:3000'),
     title: 'Tokenized Kulture — Decentralized Cultural Archive',
     description: 'AI Video Vault, Kulture Wire origin tracking, and community-voted Best Video of the Year contest. Built on Solana + Arweave.',
     keywords: ['Solana', 'Arweave', 'AI', 'Cultural Archive', 'Decentralized', 'Fact Checking', 'Video Vault'],

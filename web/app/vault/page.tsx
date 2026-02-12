@@ -72,6 +72,10 @@ export default function VaultPage() {
                                 </div>
                                 <p className="text-gray-400 mb-6 leading-relaxed">
                                     This visual manifesto outlines the vision of Tokenized Kulture — a bridge between the legends of the past and the technology of the future. It serves as the cornerstone of our AI Video Vault.
+                                    <br /><br />
+                                    <a href="https://youtu.be/eMXHZcExZYc" target="_blank" rel="noopener noreferrer" className="text-neon-pink hover:underline font-bold">
+                                        📺 WATCH ON YOUTUBE →
+                                    </a>
                                 </p>
 
                                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-white/10">

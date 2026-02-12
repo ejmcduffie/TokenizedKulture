@@ -8,17 +8,23 @@
 
 ---
 
-## 📽️ Project Vision & Manifesto
+## 📽️ Project Showreel & Previews
 
-### Featured Video: Tokenized Kulture Archive
-![Tokenized Kulture Manifesto](web/public/assets/TokenizeKulture.mp4)
-> *The AI Video Vault in action. Permanent cinematic storage on Arweave.*
+### 📺 Official Demo Video
+[![Tokenized Kulture Showreel](https://img.youtube.com/vi/eMXHZcExZYc/0.jpg)](https://youtu.be/eMXHZcExZYc)
+> *Watch the full vision on YouTube: [https://youtu.be/eMXHZcExZYc](https://youtu.be/eMXHZcExZYc)*
 
-### Architectural Blueprint: Project Infographic
-![Tokenized Kulture Infographic](web/public/assets/TOkenizedKultureINFO.png)
-> *The vision for cultural provenance and metadata preservation.*
+### 🖼️ Platform Previews
+| Homepage | AI Video Vault |
+| :---: | :---: |
+| ![Home](web/public/screenshots/home.png) | ![Vault](web/public/screenshots/vault.png) |
+
+| NFT Marketplace | Best Video Contest |
+| :---: | :---: |
+| ![Market](web/public/screenshots/market.png) | ![Contest](web/public/screenshots/contest.png) |
 
 ---
+
 
 ## 🎯 The Problems
 

@@ -10,13 +10,19 @@
 
 ## 📽️ Visual Manifesto & Architecture
 
-### Tokenized Kulture Strategy Video
-![Tokenized Kulture Manifesto](web/public/assets/TokenizeKulture.mp4)
+### 📺 Official Project Video
+[![Tokenized Kulture Manifesto](https://img.youtube.com/vi/eMXHZcExZYc/0.jpg)](https://youtu.be/eMXHZcExZYc)
+**Watch on YouTube:** [https://youtu.be/eMXHZcExZYc](https://youtu.be/eMXHZcExZYc)
 
-### Development & Provenance Infographic
+### 🖼️ Platform Implementation
+![Home Preview](web/public/screenshots/home.png)
+> *Custom 80s Hip-Hop Retro Aesthetic - Built for the Culture.*
+
+### 🛠️ Development & Provenance Infographic
 ![Tokenized Kulture Infographic](web/public/assets/TOkenizedKultureINFO.png)
 
 ---
+
 
 ## Executive Summary
 
