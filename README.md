@@ -6,6 +6,8 @@
 
 **Visionary Creator:** Emmanuel EJ McDuffie Jr.
 
+🌐 **[LIVE DEMO →](https://tokenized-kulture-monv.vercel.app)** | 📺 **[VIDEO →](https://youtu.be/eMXHZcExZYc)** | 💻 **[GITHUB →](https://github.com/ejmcduffie/TokenizedKulture)**
+
 ---
 
 ## 📽️ Project Showreel & Previews

@@ -17,51 +17,57 @@ export default function StorageDashboard() {
                 Your culture is stored across two permanent systems. Think of Solana as the <strong className="text-neon-yellow">Title Deed</strong> and Arweave as the <strong className="text-neon-cyan">Safe</strong>.
             </p>
 
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid lg:grid-cols-2 gap-8">
                 {/* Arweave Card */}
                 <motion.div
                     whileHover={{ y: -5 }}
-                    className="neon-box border-neon-cyan p-6 bg-black/20"
+                    className="neon-box border-neon-cyan p-8 bg-black/20"
                 >
-                    <div className="flex items-start gap-4 mb-4">
-                        <div className="p-3 bg-neon-cyan/10 rounded-xl">
-                            <Infinity className="w-8 h-8 text-neon-cyan" />
+                    <div className="flex items-center gap-4 mb-6">
+                        <div className="p-4 bg-neon-cyan/10 rounded-xl">
+                            <Infinity className="w-10 h-10 text-neon-cyan" />
                         </div>
                         <div>
-                            <h3 className="text-2xl font-bold text-neon-cyan mb-1">Arweave</h3>
-                            <p className="text-sm text-gray-400">The Permaweb Storage</p>
+                            <h3 className="text-3xl font-bold text-neon-cyan">Arweave</h3>
+                            <p className="text-sm text-gray-400 mt-1">Permanent File Storage</p>
                         </div>
                     </div>
 
-                    <div className="space-y-3 text-sm">
-                        <div className="flex items-start gap-2">
-                            <Shield className="w-4 h-4 text-neon-green mt-0.5 flex-shrink-0" />
-                            <div>
-                                <strong className="text-white">What's Stored:</strong>
-                                <p className="text-gray-400">Your actual files (videos, music, art) + JSON metadata (title, tags, cinematic data)</p>
-                            </div>
+                    <div className="space-y-4">
+                        <div>
+                            <p className="text-white font-bold mb-1 flex items-center gap-2">
+                                <Shield className="w-4 h-4 text-neon-green" />
+                                What's Stored
+                            </p>
+                            <p className="text-gray-300 text-sm pl-6">
+                                Your files + metadata
+                            </p>
                         </div>
 
-                        <div className="flex items-start gap-2">
-                            <LinkIcon className="w-4 h-4 text-neon-yellow mt-0.5 flex-shrink-0" />
-                            <div>
-                                <strong className="text-white">Permanence:</strong>
-                                <p className="text-gray-400">Files can <strong>never be deleted</strong>. Once uploaded, they exist forever.</p>
-                            </div>
+                        <div>
+                            <p className="text-white font-bold mb-1 flex items-center gap-2">
+                                <LinkIcon className="w-4 h-4 text-neon-yellow" />
+                                Permanence
+                            </p>
+                            <p className="text-gray-300 text-sm pl-6">
+                                Never deleted. Exists forever.
+                            </p>
                         </div>
 
-                        <div className="flex items-start gap-2">
-                            <Info className="w-4 h-4 text-neon-pink mt-0.5 flex-shrink-0" />
-                            <div>
-                                <strong className="text-white">Cost:</strong>
-                                <p className="text-gray-400">One-time payment (fractions of a cent per MB). No recurring fees.</p>
-                            </div>
+                        <div>
+                            <p className="text-white font-bold mb-1 flex items-center gap-2">
+                                <Info className="w-4 h-4 text-neon-pink" />
+                                Cost
+                            </p>
+                            <p className="text-gray-300 text-sm pl-6">
+                                One-time fee. No renewals.
+                            </p>
                         </div>
                     </div>
 
-                    <div className="mt-4 pt-4 border-t border-white/10">
-                        <code className="text-xs text-neon-cyan bg-black/40 px-2 py-1 rounded">
-                            https://arweave.net/TX_ID
+                    <div className="mt-6 pt-4 border-t border-white/10">
+                        <code className="text-xs text-neon-cyan bg-black/60 px-3 py-2 rounded block">
+                            arweave.net/TX_ID
                         </code>
                     </div>
                 </motion.div>
@@ -69,47 +75,53 @@ export default function StorageDashboard() {
                 {/* Solana Card */}
                 <motion.div
                     whileHover={{ y: -5 }}
-                    className="neon-box border-neon-yellow p-6 bg-black/20"
+                    className="neon-box border-neon-yellow p-8 bg-black/20"
                 >
-                    <div className="flex items-start gap-4 mb-4">
-                        <div className="p-3 bg-neon-yellow/10 rounded-xl">
-                            <Database className="w-8 h-8 text-neon-yellow" />
+                    <div className="flex items-center gap-4 mb-6">
+                        <div className="p-4 bg-neon-yellow/10 rounded-xl">
+                            <Database className="w-10 h-10 text-neon-yellow" />
                         </div>
                         <div>
-                            <h3 className="text-2xl font-bold text-neon-yellow mb-1">Solana</h3>
-                            <p className="text-sm text-gray-400">The Ownership Layer</p>
+                            <h3 className="text-3xl font-bold text-neon-yellow">Solana</h3>
+                            <p className="text-sm text-gray-400 mt-1">Ownership Registry</p>
                         </div>
                     </div>
 
-                    <div className="space-y-3 text-sm">
-                        <div className="flex items-start gap-2">
-                            <Shield className="w-4 h-4 text-neon-green mt-0.5 flex-shrink-0" />
-                            <div>
-                                <strong className="text-white">What's Stored:</strong>
-                                <p className="text-gray-400">The NFT token (your "Title Deed") that points to the Arweave file</p>
-                            </div>
+                    <div className="space-y-4">
+                        <div>
+                            <p className="text-white font-bold mb-1 flex items-center gap-2">
+                                <Shield className="w-4 h-4 text-neon-green" />
+                                What's Stored
+                            </p>
+                            <p className="text-gray-300 text-sm pl-6">
+                                NFT "Title Deed" pointing to file
+                            </p>
                         </div>
 
-                        <div className="flex items-start gap-2">
-                            <LinkIcon className="w-4 h-4 text-neon-yellow mt-0.5 flex-shrink-0" />
-                            <div>
-                                <strong className="text-white">Ownership:</strong>
-                                <p className="text-gray-400">Proves you own the NFT. Enables buying, selling, and transferring.</p>
-                            </div>
+                        <div>
+                            <p className="text-white font-bold mb-1 flex items-center gap-2">
+                                <LinkIcon className="w-4 h-4 text-neon-yellow" />
+                                Ownership
+                            </p>
+                            <p className="text-gray-300 text-sm pl-6">
+                                Buy, sell, transfer your NFTs
+                            </p>
                         </div>
 
-                        <div className="flex items-start gap-2">
-                            <Info className="w-4 h-4 text-neon-pink mt-0.5 flex-shrink-0" />
-                            <div>
-                                <strong className="text-white">Wallet Capacity:</strong>
-                                <p className="text-gray-400">Hold <strong>unlimited NFTs</strong> in one wallet. Each NFT is a separate SPL token.</p>
-                            </div>
+                        <div>
+                            <p className="text-white font-bold mb-1 flex items-center gap-2">
+                                <Info className="w-4 h-4 text-neon-pink" />
+                                Capacity
+                            </p>
+                            <p className="text-gray-300 text-sm pl-6">
+                                Unlimited NFTs per wallet
+                            </p>
                         </div>
                     </div>
 
-                    <div className="mt-4 pt-4 border-t border-white/10">
-                        <code className="text-xs text-neon-yellow bg-black/40 px-2 py-1 rounded">
-                            Kulture...abc123 (Mint Address)
+                    <div className="mt-6 pt-4 border-t border-white/10">
+                        <code className="text-xs text-neon-yellow bg-black/60 px-3 py-2 rounded block">
+                            Kulture...abc123
                         </code>
                     </div>
                 </motion.div>
