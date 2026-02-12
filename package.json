@@ -4,9 +4,12 @@
   "description": "Autonomous AI Agent for Cultural Token Trading on Solana - Hackathon Submission",
   "main": "dist/index.js",
   "type": "module",
+  "workspaces": [
+    "web"
+  ],
   "scripts": {
     "dev": "tsx src/index.ts",
-    "build": "tsc",
+    "build": "cd web && next build",
     "start": "node dist/index.js",
     "test": "jest",
     "lint": "eslint src/**/*.ts",
@@ -54,7 +57,8 @@
     "jest": "^29.7.0",
     "prettier": "^3.3.3",
     "tsx": "^4.19.2",
-    "typescript": "^5.6.3"
+    "typescript": "^5.6.3",
+    "next": "14.1.0"
   },
   "engines": {
     "node": ">=18.0.0"
