@@ -19,6 +19,7 @@ web/.env
 !tsconfig.json
 !next.config.json
 !project.json
+!vercel.json
 *wallet.json
 *key.json
 *keypair.json
