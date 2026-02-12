@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Permanent+Marker&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #0D0D0D;
+    color: white;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    background-image:
+      linear-gradient(0deg, transparent 24%, rgba(0, 255, 255, .05) 25%, rgba(0, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(0, 255, 255, .05) 75%, rgba(0, 255, 255, .05) 76%, transparent 77%, transparent),
+      linear-gradient(90deg, transparent 24%, rgba(0, 255, 255, .05) 25%, rgba(0, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(0, 255, 255, .05) 75%, rgba(0, 255, 255, .05) 76%, transparent 77%, transparent);
+    background-size: 50px 50px;
+  }
+}
+
+@layer utilities {
+  .text-neon {
+    text-shadow:
+      0 0 10px currentColor,
+      0 0 20px currentColor,
+      0 0 30px currentColor,
+      0 0 40px currentColor;
+  }
+
+  .neon-box {
+    background-color: rgba(13, 13, 13, 0.8);
+    backdrop-filter: blur(4px);
+    border-width: 2px;
+    border-radius: 0.5rem;
+    box-shadow:
+      0 0 10px currentColor,
+      inset 0 0 10px rgba(255, 255, 255, 0.1);
+  }
+
+  .graffiti-text {
+    font-family: 'Permanent Marker', cursive;
+    text-shadow:
+      3px 3px 0 #FF00FF,
+      6px 6px 0 #00FFFF;
+  }
+}
