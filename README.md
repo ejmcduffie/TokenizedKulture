@@ -8,6 +8,18 @@
 
 ---
 
+## 📽️ Project Vision & Manifesto
+
+### Featured Video: Tokenized Kulture Archive
+![Tokenized Kulture Manifesto](web/public/assets/TokenizeKulture.mp4)
+> *The AI Video Vault in action. Permanent cinematic storage on Arweave.*
+
+### Architectural Blueprint: Project Infographic
+![Tokenized Kulture Infographic](web/public/assets/TOkenizedKultureINFO.png)
+> *The vision for cultural provenance and metadata preservation.*
+
+---
+
 ## 🎯 The Problems
 
 1. **Cultural Amnesia** — Things trend on social media and nobody knows their real origins. The Arab Spring was born on Twitter, but today you can't reconstruct the original threads.

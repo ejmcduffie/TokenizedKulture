@@ -8,6 +8,16 @@
 
 ---
 
+## 📽️ Visual Manifesto & Architecture
+
+### Tokenized Kulture Strategy Video
+![Tokenized Kulture Manifesto](web/public/assets/TokenizeKulture.mp4)
+
+### Development & Provenance Infographic
+![Tokenized Kulture Infographic](web/public/assets/TOkenizedKultureINFO.png)
+
+---
+
 ## Executive Summary
 
 Tokenized Kulture is a decentralized platform that solves three critical problems in today's digital culture:
